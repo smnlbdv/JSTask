@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSTask</title>
+    <script src="script.js"></script>
+    <script>
+        function DateNow() {
+            var now = new Date().toLocaleTimeString().slice(0,-3); // 11:02  
+            alert(now)
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DateNow()">Показать год</button>
+    <button onclick="ReturnOb(event)">Расчитать объем</button>
+    <script>
+        let n = 9
+        while(n!=0) {
+            document.writeln("Лебедев Семён Владимирович");
+            n-=1
+        }
+
+        let sum = 1;
+        let arr = [1,-2,3,-4,5,6,-7]
+        arr.forEach(item => {
+            if(item < 0) {
+                sum*=item
+            }
+        });
+        document.writeln("Сумма отрицательных элементов: " + sum)
+
+    </script>
+</body>
+</html>
